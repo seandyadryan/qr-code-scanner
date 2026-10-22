@@ -14,6 +14,8 @@ Manual runs also offer a `publish_privacy` checkbox (default on). This publishes
 
 Repository Actions secrets: `KEYSTORE_BASE64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS`, `KEY_PASSWORD`. Signing material is restored only during the job and removed in its final cleanup step. Only run trusted code with the release signing secrets.
 
+The optional **Collect signed release** workflow copies an existing successful artifact into a draft GitHub release when direct Actions downloads are unreliable. It performs no Android rebuild and never publishes the draft or uploads to Play. Its tag starts with `app-build-`, so it does not trigger the Android release tag workflow.
+
 ## Play Console handoff
 1. Create a **paid** app called QR Scanner Pro, developer PT Deploy Dulu Pulang Nanti. Set the price and country distribution yourself. This project has no ads, billing SDK, or subscriptions.
 2. Enroll in Play App Signing and upload the signed AAB; retain the local key as the upload key.

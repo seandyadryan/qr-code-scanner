@@ -1,0 +1,40 @@
+name: Collect signed release
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Successful Android release run ID
+        type: string
+        required: true
+      artifact_name:
+        description: Signed artifact name from that run
+        type: string
+        required: true
+permissions:
+  actions: read
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.run_id }}
+          name: ${{ inputs.artifact_name }}
+          path: release-files
+      - name: Package existing signed files
+        run: |
+          cd release-files
+          zip -qr ../qr-scanner-pro-signed-release.zip .
+      - name: Store files in a private draft release
+        run: |
+          printf '%s\n' 'Signed APK, AAB, mapping and test/lint reports from the successful Android build. Draft delivery only; no Play Store upload.' > release-notes.txt
+          if ! gh release view app-build-1.0.0 >/dev/null 2>&1; then
+            gh release create app-build-1.0.0 --draft --title 'QR Scanner Pro 1.0.0' --notes-file release-notes.txt
+          fi
+          gh release upload app-build-1.0.0 qr-scanner-pro-signed-release.zip --clobber
