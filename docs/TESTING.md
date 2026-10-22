@@ -6,4 +6,6 @@ An Android 15 / API 35 emulator was used to exercise QR creation through the act
 
 The release workflow runs the same JVM tests, release lint, R8 optimization, signed APK packaging and signed AAB packaging. Its downloadable artifact includes the APK, AAB, mapping, test reports and lint XML. The handoff ZIP adds a `docs/verification.json` report with signature checks, hashes, 16 KB packaging checks and UI smoke results.
 
+The CI-signed release APK was installed on the dedicated emulator and exercised separately from the debug capture build. Text QR generation, the real CameraX preview, and system photo-picker import passed. The selected QR image decoded to `https://example.com/coffee` and persisted in history alongside the created QR. No application runtime crash was observed. `tools/smoke_release.py` repeats the release installation, generation and camera checks; `tools/smoke_image_import.py` repeats image import on a dedicated emulator with no other photo fixtures.
+
 Physical camera optics, real device flashlight/zoom behavior, Android 8 runtime behavior and a real 16 KB Android device still require device testing before production. The emulator verifies UI and packaging behavior, not real camera image quality. See `docs/RELEASE.md` for the Play Console handoff.

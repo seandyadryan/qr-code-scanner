@@ -31,7 +31,8 @@ with zipfile.ZipFile(apk) as z:
             assert min(segments)>=16384,(name,segments)
             alignments[name]=segments
 jarsigner=java.with_name('jarsigner.exe' if os.name=='nt' else 'jarsigner')
-subprocess.run([str(jarsigner),'-verify',str(aab)],capture_output=True,text=True,check=True)
+aab_signature=subprocess.run([str(jarsigner),'-verify',str(aab)],capture_output=True,text=True,check=True)
+assert 'jar verified.' in aab_signature.stdout,'AAB has no verified JAR signature'
 tests=[ET.parse(p).getroot() for p in (ROOT/'app/build/test-results/testDebugUnitTest').glob('TEST-*.xml')]
 assert tests and all(int(r.get('failures','0'))==0 and int(r.get('errors','0'))==0 for r in tests)
 lint=ET.parse(ROOT/'app/build/reports/lint-results-release.xml').getroot()
@@ -39,6 +40,7 @@ assert not any(i.get('severity') in ['Error','Fatal'] for i in lint.findall('iss
 assets=json.loads((ROOT/'docs/asset-validation.json').read_text())
 assert assets['passed']
 ui=json.loads((ROOT/'output/ui-smoke-result.json').read_text())
+assert ui.get('release_apk_smoke'),'Run the signed release smoke test first'
 report={
     'package':'com.deploydulupulangnanti.qrcodescanner','version':'1.0.0 (1)',
     'unit_tests':sum(int(r.get('tests','0')) for r in tests),'unit_failures':0,

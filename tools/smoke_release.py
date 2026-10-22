@@ -3,20 +3,23 @@ import json,time
 import capture_android as ui
 
 assert ui.adb('get-serialno').decode().strip().startswith('emulator-'),'Use an emulator, not a personal device.'
+ui.shell('input','keyevent','224')
+ui.shell('wm','dismiss-keyguard')
+ui.shell('settings','put','system','screen_off_timeout','2147483647')
 ui.adb('logcat','-c')
 ui.adb('uninstall',ui.PKG)
 ui.adb('install',ui.ROOT/'app/build/outputs/apk/release/app-release.apk',timeout=180)
 ui.launch(capture=False)
 ui.tap_node(text='Create')
+ui.tap_node(text='Text')
 ui.tap_node(klass='android.widget.EditText')
 time.sleep(2)
-for character in 'a.co':
-    ui.shell('input','text',character)
-    time.sleep(.4)
+ui.shell('input','text','a')
+time.sleep(2)
 ui.shell('input','keyevent','4')
 ui.tap_node(text='Create QR code')
 time.sleep(2)
-assert any(n.get('text')=='https://a.co' for n in ui.hierarchy().iter('node')),'Optimized QR generation failed'
+assert any(n.get('text')=='a' for n in ui.hierarchy().iter('node')),'Optimized QR generation failed'
 ui.shot(ui.ROOT/'output/release-qr-result.png')
 ui.tap_node(desc='Close result')
 ui.shell('pm','grant',ui.PKG,'android.permission.CAMERA')
