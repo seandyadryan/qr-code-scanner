@@ -1,0 +1,9 @@
+{
+  "duration_seconds": 30,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "codec": "H.264",
+  "audio": false,
+  "bytes": 2906920
+}

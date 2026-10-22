@@ -1,0 +1,31 @@
+A little scan. A lot of possibility.
+
+QR Scanner Pro is a thoughtfully designed QR and barcode companion for everyday discoveries. Scan a menu, read a product barcode, share your website, or create a guest Wi-Fi code in a few taps. A calm interface keeps the useful things close.
+
+SCAN WITH CONFIDENCE
+Point your camera at a QR code or barcode. Tap to focus, adjust the zoom, or use the flashlight in low light. You can also read a code from an image using the system photo picker. Review the decoded content before choosing what to do next. Websites never open automatically.
+
+MAKE SOMETHING SHAREABLE
+Create QR codes for websites, plain text, Wi-Fi networks, email addresses, and phone numbers. Save a crisp PNG or share the QR image with another app. Share a guest network without typing the password on every device.
+
+KEEP WHAT MATTERS
+Save up to 1,000 codes in local history. Search by content or type, star your favorites, copy results, and export your collection as CSV. Disable automatic history saving or delete your collection whenever you like.
+
+QUIETLY CAPABLE
+• QR codes and common 1D/2D barcodes, including EAN, UPC, Code 128, Code 39, Code 93, ITF, Codabar, Data Matrix, Aztec, and PDF417.
+• Camera scanning and scanning from selected images.
+• QR creation and PNG sharing.
+• Searchable local history, favorites, and CSV export.
+• Light and dark appearances.
+• Adaptive layouts for phones, tablets, and larger Android screens.
+• Optional haptic feedback.
+
+YOUR DEVICE. YOUR DATA.
+Scanning, QR creation, and history work offline. No account, ads, analytics, subscriptions, or internet permission. Camera images and selected photos are processed on your device. Opening websites, sending emails, and sharing or exporting content use the external apps you choose and may require a connection.
+
+QR Scanner Pro reads the content stored in a code. It does not provide a product price database, guarantee that a link is safe, or connect to Wi-Fi automatically. Scan quality depends on the camera, lighting, and code quality. Protected Wi-Fi QR creation supports WPA/WPA2 Personal and open networks; enterprise networks are not supported.
+
+One paid app. Everyday utility, without the noise.
+
+Support: seandyadryan2@gmail.com
+Developer: PT Deploy Dulu Pulang Nanti

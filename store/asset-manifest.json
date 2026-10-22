@@ -1,0 +1,134 @@
+[
+  {
+    "file": "graphics/app-icon-512.png",
+    "width": 512,
+    "height": 512,
+    "bytes": 2044
+  },
+  {
+    "file": "graphics/feature-graphic-1024x500.png",
+    "width": 1024,
+    "height": 500,
+    "bytes": 96174
+  },
+  {
+    "file": "preview.png",
+    "width": 1620,
+    "height": 960,
+    "bytes": 322905
+  },
+  {
+    "file": "screenshots/desktop/01-scan.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 222229
+  },
+  {
+    "file": "screenshots/desktop/02-create.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 87843
+  },
+  {
+    "file": "screenshots/desktop/03-history.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 99064
+  },
+  {
+    "file": "screenshots/desktop/04-result.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 99646
+  },
+  {
+    "file": "screenshots/phone/01-scan.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 476264
+  },
+  {
+    "file": "screenshots/phone/02-create.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 175435
+  },
+  {
+    "file": "screenshots/phone/03-history.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 213661
+  },
+  {
+    "file": "screenshots/phone/04-result.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 164884
+  },
+  {
+    "file": "screenshots/phone/05-wifi.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 175603
+  },
+  {
+    "file": "screenshots/phone/06-settings.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 207607
+  },
+  {
+    "file": "screenshots/phone/07-dark.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 468697
+  },
+  {
+    "file": "screenshots/tablet-10/01-scan.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 270704
+  },
+  {
+    "file": "screenshots/tablet-10/02-create.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 100823
+  },
+  {
+    "file": "screenshots/tablet-10/03-history.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 113737
+  },
+  {
+    "file": "screenshots/tablet-10/04-result.png",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 103414
+  },
+  {
+    "file": "screenshots/tablet-7/01-scan.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 413714
+  },
+  {
+    "file": "screenshots/tablet-7/02-create.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 128819
+  },
+  {
+    "file": "screenshots/tablet-7/03-history.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 152046
+  },
+  {
+    "file": "screenshots/tablet-7/04-result.png",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 167879
+  }
+]

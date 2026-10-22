@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.QRScanner" parent="Theme.QRScanner.Base">
+        <item name="android:windowSplashScreenBackground">#F8F6F2</item>
+    </style>
+</resources>

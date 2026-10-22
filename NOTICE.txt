@@ -1,0 +1,1 @@
+QR Scanner Pro uses ZXing Core, AndroidX and Kotlin components under the Apache License 2.0. Full notices and license text are available in the app under Settings / Open source licenses and in app/src/main/assets/licenses.txt. Copyright 2026 PT Deploy Dulu Pulang Nanti. All rights reserved for original application code and store artwork.

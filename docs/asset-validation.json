@@ -1,0 +1,169 @@
+{
+  "listing_characters": {
+    "short": 80,
+    "full": 2270
+  },
+  "screenshots": {
+    "phone": [
+      {
+        "file": "01-scan.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 476264
+      },
+      {
+        "file": "02-create.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 175435
+      },
+      {
+        "file": "03-history.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 213661
+      },
+      {
+        "file": "04-result.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 164884
+      },
+      {
+        "file": "05-wifi.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 175603
+      },
+      {
+        "file": "06-settings.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 207607
+      },
+      {
+        "file": "07-dark.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 468697
+      }
+    ],
+    "tablet-7": [
+      {
+        "file": "01-scan.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 413714
+      },
+      {
+        "file": "02-create.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 128819
+      },
+      {
+        "file": "03-history.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 152046
+      },
+      {
+        "file": "04-result.png",
+        "size": [
+          1080,
+          1920
+        ],
+        "bytes": 167879
+      }
+    ],
+    "tablet-10": [
+      {
+        "file": "01-scan.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 270704
+      },
+      {
+        "file": "02-create.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 100823
+      },
+      {
+        "file": "03-history.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 113737
+      },
+      {
+        "file": "04-result.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 103414
+      }
+    ],
+    "desktop": [
+      {
+        "file": "01-scan.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 222229
+      },
+      {
+        "file": "02-create.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 87843
+      },
+      {
+        "file": "03-history.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 99064
+      },
+      {
+        "file": "04-result.png",
+        "size": [
+          1920,
+          1080
+        ],
+        "bytes": 99646
+      }
+    ]
+  },
+  "passed": true
+}
